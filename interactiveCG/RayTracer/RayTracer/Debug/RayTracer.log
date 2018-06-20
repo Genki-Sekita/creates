@@ -1,0 +1,44 @@
+﻿2018/06/19 16:45:37 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "H:\WinFiles\Desktop\ICG2017\RayTracer\RayTracer\RayTracer.vcxproj" (Build ターゲット)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"H:\WinFiles\Desktop\ICG2017\fltk-1.3.0" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt src\SceneObjects\trimesh.cpp
+         trimesh.cpp
+     1>c:\program files (x86)\windows kits\8.1\include\um\sal_supp.h(57): warning C4005: '__useHeader' : マクロが再定義されました。
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\sal.h(2886) : '__useHeader' の前の定義を確認してください
+     1>c:\program files (x86)\windows kits\8.1\include\um\specstrings_supp.h(77): warning C4005: '__on_failure' : マクロが再定義されました。
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\sal.h(2896) : '__on_failure' の前の定義を確認してください
+     1>h:\winfiles\desktop\icg2017\raytracer\raytracer\src\sceneobjects\trimesh.cpp(90): warning C4244: '引数' : 'double' から 'float' への変換です。データが失われる可能性があります。
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"H:\WinFiles\Desktop\ICG2017\RayTracer\Debug\RayTracer.exe" /INCREMENTAL /NOLOGO /LIBPATH:"H:\WinFiles\Desktop\ICG2017\fltk-1.3.0\lib" comctl32.lib wsock32.lib opengl32.lib glu32.lib odbc32.lib odbccp32.lib fltkd.lib fltkformsd.lib fltkgld.lib fltkimagesd.lib fltkjpegd.lib fltkpngd.lib fltkzlibd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /NODEFAULTLIB:LIBCMTd /NODEFAULTLIB:MSVCRT /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"H:\WinFiles\Desktop\ICG2017\RayTracer\Debug\RayTracer.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"H:\WinFiles\Desktop\ICG2017\RayTracer\Debug\RayTracer.lib" /MACHINE:X86 Debug\buffer.obj
+         Debug\imageio.obj
+         Debug\getopt.obj
+         Debug\main.obj
+         Debug\Parser.obj
+         Debug\ParserException.obj
+         Debug\Token.obj
+         Debug\Tokenizer.obj
+         Debug\RayTracer.obj
+         Debug\Box.obj
+         Debug\Cone.obj
+         Debug\Cylinder.obj
+         Debug\Sphere.obj
+         Debug\Square.obj
+         Debug\trimesh.obj
+         Debug\camera.obj
+         Debug\light.obj
+         Debug\material.obj
+         Debug\ray.obj
+         Debug\scene.obj
+         Debug\CommandLineUI.obj
+         Debug\debuggingView.obj
+         Debug\debuggingWindow.obj
+         Debug\glObjects.obj
+         Debug\GraphicalUI.obj
+         Debug\ModelerCamera.obj
+         Debug\TraceGLWindow.obj
+         RayTracer.vcxproj -> H:\WinFiles\Desktop\ICG2017\RayTracer\Debug\RayTracer.exe
+     1>プロジェクト "H:\WinFiles\Desktop\ICG2017\RayTracer\RayTracer\RayTracer.vcxproj" (Build ターゲット) のビルドが完了しました。
+
+ビルドに成功しました。
+
+経過時間 00:00:10.95

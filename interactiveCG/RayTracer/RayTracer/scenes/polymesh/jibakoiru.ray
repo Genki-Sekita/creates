@@ -1,0 +1,214 @@
+SBT-raytracer 1.0
+
+camera {
+  position=( 0.0,0.0,-10.0 );
+  viewdir=( 0.0,0.0,1.0 );
+  updir=( 0.0,1.0,0.0 );
+  fov=45;
+}
+
+point_light {
+  position=( 0,2.0,-10.0 );
+  color=( 1,1,1 );
+  constant_attenuation_coeff= 0.25;
+  linear_attenuation_coeff = 0.003;
+  quadratic_attenuation_coeff = 0.00004;
+}
+
+scale( 2,2,2,
+	sphere {
+		material={
+		diffuse=( 0.3,0.3,0.3 );
+		ambient=( 0.2,0.2,0.2 );
+		transmissive = (0.5,0.5,0.5);
+		specular = (0.3,0.3,0.3)
+		};
+	}
+	)
+
+
+translate( 2.5,0,0,
+		sphere {
+		  material={
+			diffuse=( 0.3,0.3,0.3 );
+			ambient=( 0.2,0.2,0.2 );
+			transmissive = (0.5,0.5,0.5);
+		  };
+		}
+)
+
+translate( -2.5,0,0,
+		sphere {
+		  material={
+			diffuse=( 0.3,0.3,0.3 );
+			ambient=( 0.2,0.2,0.2 );
+			transmissive = (0.5,0.5,0.5);
+		  };
+		}
+)
+
+    scale( 6.5,0.1,2.5,
+      sphere {
+        material={
+          diffuse=( 0.7,0.7,0.7 );
+          ambient=( 0.2,0.2,0.2 );
+		  transmissive = (0.5,0.5,0.5);
+        };
+      }
+)
+
+rotate( 1,0,0,0.5,
+translate( 0,0,-2,
+    scale( 0.8,0.8,0.1,
+		sphere {
+		  material={
+			diffuse=( 1,1,1 );
+			ambient=( 0.2,0.2,0.2 );
+		  };
+		}
+)))
+
+rotate( 1,0,0,0.5,
+translate( 0,0,-2.01,
+    scale( 0.5,0.5,0.1,
+		sphere {
+		  material={
+			diffuse=( 0.8,0,0 );
+			ambient=( 0.2,0.2,0.2 );
+		  };
+		}
+)))
+
+translate( 2.5,0,0,
+rotate( 1,0,0,0.5,
+translate( 0,0,-1,
+    scale( 0.4,0.4,0.1,
+		sphere {
+		  material={
+			diffuse=( 1,1,1 );
+			ambient=( 0.2,0.2,0.2 );
+		  };
+		}
+))))
+
+translate( 2.5,0,0,
+rotate( 1,0,0,0.5,
+translate( 0,0,-1.01,
+    scale( 0.2,0.2,0.1,
+		sphere {
+		  material={
+			diffuse=( 0,0,0 );
+			ambient=( 0.2,0.2,0.2 );
+		  };
+		}
+))))
+
+translate( -2.5,0,0,
+rotate( 1,0,0,0.5,
+translate( 0,0,-1,
+    scale( 0.4,0.4,0.1,
+		sphere {
+		  material={
+			diffuse=( 1,1,1 );
+			ambient=( 0.2,0.2,0.2 );
+		  };
+		}
+))))
+
+translate( -2.5,0,0,
+rotate( 1,0,0,0.5,
+translate( 0,0,-1.01,
+    scale( 0.2,0.2,0.1,
+		sphere {
+		  material={
+			diffuse=( 0,0,0 );
+			ambient=( 0.2,0.2,0.2 );
+		  };
+		}
+))))
+
+
+translate(0, 2.3, 0,
+    scale( 0.2,0.6,0.2,
+		box {
+		  material={
+			diffuse=( 0.8,0.8,0 );
+			ambient=( 0.2,0.2,0.2 );
+		  };
+		}
+))
+
+translate(0, 2.6, 0, 
+    scale( 0.4,0.4,0.4,
+		sphere {
+		  material={
+			diffuse=( 0.8,0.8,0 );
+			ambient=( 0.2,0.2,0.2 );
+		  };
+		}
+))
+
+translate(0, -4, 6,
+    scale( 3, 1, 1,
+		box {
+		  material={
+			diffuse=( 0.3,0.3,0.3 );
+			ambient=( 0.2,0.2,0.2 );
+		  };
+		}
+))
+
+translate(2.6, -3.1, 6,
+rotate( 0,0,1,0.8,
+    scale( 3, 1, 1,
+		box {
+		  material={
+			diffuse=( 0.3,0.3,0.3 );
+			ambient=( 0.2,0.2,0.2 );
+		  };
+		}
+)))
+
+
+translate(-2.6, -3.1, 6,
+rotate( 0,0,1,-0.8,
+    scale( 3, 1, 1,
+		box {
+		  material={
+			diffuse=( 0.3,0.3,0.3 );
+			ambient=( 0.2,0.2,0.2 );
+		  };
+		}
+)))
+
+translate(3.3, 2, 6,
+    scale( 1, 6.4, 1,
+		box {
+		  material={
+			diffuse=( 1,0.3,0.3 );
+			ambient=( 0.2,0.2,0.2 );
+		  };
+		}
+))
+
+translate(-3.3, 2, 6,
+    scale( 1, 6.4, 1,
+		box {
+		  material={
+			diffuse=( 0.3,0.3,1 );
+			ambient=( 0.2,0.2,0.2 );
+		  };
+		}
+))
+
+translate(0,0,10,
+    scale(13,13,0.1,
+		box {
+		  material={
+			diffuse=( 0.9,0.9,0.9 );
+			ambient=( 0.2,0.2,0.2 );
+		  };
+		}
+))
+
+
